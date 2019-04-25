@@ -9,6 +9,10 @@ use Magento\Framework\App\Request\Http;
 use Magento\Framework\App\ObjectManager;
 use Magento\ConfigurableProduct\Api\LinkManagementInterface;
 
+/**
+ * juicy-patch: render 'landing' trustboxes on all pages, not just cms-index-index
+ * obviously, the module now can't be used as it was originally intended
+ */
 class Trustbox extends Template
 {
     protected $_helper;
