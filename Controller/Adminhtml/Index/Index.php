@@ -82,7 +82,7 @@ class Index extends Action
 
     private function setConfig($key, $value, $scope, $scopeId)
     {
-        $this->_helper->setConfig($key, $value, $scope, $scopeId);
+        $this->_helper->setConfig($key, $value, 'default', 0);
         $this->getResponse()->setBody($value);
     }
 }
